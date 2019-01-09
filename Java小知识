@@ -1,0 +1,2 @@
+Q:构造器Constructor能否被重写？
+A:不能。因为父类的私有方法和属性不能被继承，Constructor可以被重载。
