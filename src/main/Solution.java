@@ -2,14 +2,14 @@ package main;
 
 import java.util.Arrays;
 
-//注释内容：包含题号和题目，测试代码再test中，每次做题都注释掉上一次代码
+//注释内容：包含题号和题目，测试代码再test中，每次做题都把上一次方法改成非静态。
 public class Solution {
     //389 找不同
     /*给定两个字符串 s 和 t，它们只包含小写字母。
      *字符串 t 由字符串 s 随机重排，然后在随机位置添加一个字母。
      *请找出在 t 中被添加的字母
      */
-    public static char findTheDifference(String s, String t) {
+    public char findTheDifference(String s, String t) {
         //char difference;
         char[] sc = s.toCharArray();//将string转成char数组
         char[] tc = t.toCharArray();
@@ -27,5 +27,20 @@ public class Solution {
             if(news[i] != newl[i])return newl[i];
         }
         return newl[newl.length-1];
+    }
+
+    //929 独特的电子邮件地址
+    public int numUniqueEmails(String[] emails) {
+        public int numUniqueEmails(String[] emails) {
+            HashSet<String> addSet = new HashSet();
+            String realAdd;
+            for(String s : emails){
+                String[] add = s.split("@");
+                //if(add[0].charAt('+') !=0)
+                realAdd = add[0].substring(0, add[0].indexOf("+")).replaceAll(".","");
+                addSet.add(realAdd+add[1]);
+            }
+            return addSet.size();
+        }
     }
 }
