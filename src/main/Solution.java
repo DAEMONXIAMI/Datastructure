@@ -1,6 +1,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 //注释内容：包含题号和题目，测试代码再test中，每次做题都把上一次方法改成非静态。
 public class Solution {
@@ -42,5 +43,33 @@ public class Solution {
             }
             return addSet.size();
         }
+    }
+
+    //905按奇偶数组排序
+    public int[] sortArrayByParity(int[] A) {
+        int temp;
+
+        for (int i = 0, j = A.length - 1; i <= j; ) {
+            //当A[i]是奇数，A[j]是偶数，则交换
+            if (A[i]%2 == 1 && A[j]%2 == 0){
+                temp = A[i];
+                A[i] = A[j];
+                A[j] = temp;
+            }
+            //当A[i]是奇数，A[j]是奇数，则j--
+            else if(A[i]%2 == 1 && A[j]%2 == 1){
+                j--;
+            }
+            //当A[i]是偶数数，A[j]是奇数，则j--，i++
+            else if(A[i]%2 == 0 && A[j]%2 == 1){
+                i++;
+                j--;
+            }
+            //当A[i]是偶数数，A[j]是偶数，则i++
+            else if(A[i]%2 == 0 && A[j]%2 == 0){
+                i++;
+            }
+        }
+        return A;
     }
 }
