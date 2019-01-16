@@ -72,4 +72,21 @@ public class Solution {
         }
         return A;
     }
+
+    //832反转图像
+    public int[][] flipAndInvertImage(int[][] A) {
+            int length = A[0].length;
+            int temp;
+            for(int i = 0; i<length; i++){
+                for(int j =0; j <length/2; j++){
+                    temp = A[i][j]==1?0:1;
+                    A[i][j] = A[i][length-1-j]==1?0:1;
+                    A[i][length-1-j] = temp;
+                }
+                if(length%2==1){
+                    A[i][length/2] = A[i][length/2]==1?0:1;
+                }
+            }
+            return A;
+    }
 }
