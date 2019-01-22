@@ -90,5 +90,16 @@ public class Solution {
             return A;
     }
 
-    
+    //237. 删除链表中的节点
+    public void deleteNode(ListNode node) {
+        ListNode head = node;
+        ListNode tail = node;
+        while(head.next != null){
+            head.val = head.next.val;
+            tail = head;
+            head = head.next;
+            }
+            tail.next = null;
+    }
+
 }
