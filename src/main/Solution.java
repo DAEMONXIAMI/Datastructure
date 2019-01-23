@@ -102,4 +102,20 @@ public class Solution {
             tail.next = null;
     }
 
+    //292Nim游戏
+    public boolean canWinNim(int n) {
+        return(n%4 != 0);
+    }
+
+    //344 翻转字符串
+    public void reverseString(char[] s) {
+        int lo = 0;
+        int hi = s.length -1;
+        char temp;
+        while(lo<hi && s != null){
+            temp = s[lo];
+            s[lo++] = s[hi];
+            s[hi--] = temp;
+        }
+    }
 }
