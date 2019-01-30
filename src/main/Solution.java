@@ -118,4 +118,24 @@ public class Solution {
             s[hi--] = temp;
         }
     }
+
+    //557.反转字符串中的单词
+    public String reverseWords(String s) {
+        String[] s1 = s.split(" ");
+        String rs = "";
+        for(int i=0; i<s1.length; i++){
+            char[] sc = s1[i].toCharArray();
+
+            for(int k=0, j=sc.length-1; k<j ;){
+                char temp;
+                temp = sc[k];
+                sc[k++] =sc[j];
+                sc[j--] = temp;
+            }
+            if(i==0) rs = rs + (new String(sc));
+            else rs = rs + " " + (new String(sc)) ;
+        }
+
+        return rs;
+    }
 }
