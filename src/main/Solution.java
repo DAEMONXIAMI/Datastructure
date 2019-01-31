@@ -31,6 +31,7 @@ public class Solution {
     }
 
     //929 独特的电子邮件地址
+/*
     public int numUniqueEmails(String[] emails) {
         public int numUniqueEmails(String[] emails) {
             HashSet<String> addSet = new HashSet();
@@ -44,6 +45,7 @@ public class Solution {
             return addSet.size();
         }
     }
+*/
 
     //905按奇偶数组排序
     public int[] sortArrayByParity(int[] A) {
@@ -137,5 +139,20 @@ public class Solution {
         }
 
         return rs;
+    }
+    //206.反转链表
+    public static ListNode reverseList(ListNode head) {
+        ListNode next = null;
+        if(head == null) return null;
+        ListNode star = head.next;
+        ListNode current = head;
+        if(current != null){
+            star = current.next;
+            current.next = next;
+            next = current;
+            current = star;
+        }
+
+        return next;
     }
 }
