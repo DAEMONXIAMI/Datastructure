@@ -155,4 +155,79 @@ public class Solution {
 
         return next;
     }
+    //59.螺旋矩阵
+    public int[][] generateMatrix(int n) {
+        int direction = 0; //1:right, 2:down, 3:left, 4:up;
+        int[][] gm = new int[n][n];
+        int i = 0;
+        int j = 0;
+        int num = 1;
+        gm[0][0] = 1;
+        while (num != n*n ) {
+            switch (direction) {
+                case 0:
+                    try {
+                        System.out.println("gm[1][1]" +":"+gm[1][1]);
+                        if(gm[i][++j] == 0){
+                        gm[i][j] = ++num;
+                        System.out.println("gm[" +i+"]"+"["+j+"]"+":"+gm[i][j]);
+                        System.out.println("gm[1][2]:" + gm[1][2]);}
+                        else {
+                            j--;
+                            direction = 1;
+                        }
+                    } catch (Exception e) {
+                        direction = 1;
+                        j--;
+                        //num--;
+                    }
+                    break;
+                case 1:
+                    try {
+                        if(gm[++i][j] == 0){
+                            System.out.println("gm[1][2]::" + gm[1][2]);
+                            gm[i][j] = ++num;
+                            System.out.println("gm[" +i+"]"+"["+j+"]"+"::"+gm[i][j]); }
+                        else {
+                            i--;
+                            direction = 2;
+                        }
+                    } catch (Exception e) {
+                        direction = 2;
+                        i--;
+                        //num--;
+                    }
+                    break;
+                case 2:
+                    try {
+                        if(gm[i][--j] == 0){
+                            gm[i][j] = ++num;
+                            System.out.println("gm[" +i+"]"+"["+j+"]"+":::"+gm[i][j]);}
+                        else {
+                            j++;
+                            direction = 3;}
+                    } catch (Exception e) {
+                        direction = 3;
+                        j++;
+                        //num--;
+                    }
+                    break;
+                case 3:
+                    try {
+                        if(gm[--i][j] == 0){
+                            gm[i][j] = ++num;
+                            System.out.println("gm[" +i+"]"+"["+j+"]"+"::::"+gm[i][j]);}
+                        else {
+                            i++;
+                            direction = 0;}
+                    } catch (Exception e) {
+                        direction = 0;
+                        i++;
+                        //num--;
+                    }
+                    break;
+            }
+        }
+        return gm;
+    }
 }
