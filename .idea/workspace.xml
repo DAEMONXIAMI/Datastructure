@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bf4641c3-683a-43d4-9934-17a4428122bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClass.java" afterDir="false" />
     </list>
@@ -17,7 +19,7 @@
     <session id="1687464139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.20" value="1" />
@@ -25,7 +27,8 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,13 +43,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2356" />
+          <entry key="java" value="2682" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2356" />
+          <entry key="JAVA" value="2682" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
@@ -57,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="231" column="5" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="231" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="232" column="6" selection-start-line="232" selection-start-column="6" selection-end-line="232" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#findTheDifference#0;class#Solution#0" />
@@ -68,6 +71,7 @@
                 <element signature="method#reverseString#0;class#Solution#0" />
                 <element signature="method#reverseWords#0;class#Solution#0" />
                 <element signature="method#reverseList#0;class#Solution#0" />
+                <element signature="method#generateMatrix#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -76,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+            <state relative-caret-position="178">
+              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -127,8 +131,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="761" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="760" />
     <option name="y" value="35" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -138,6 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,9 +172,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +181,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549033043975" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550410690602" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ssm/项目源码/SSMDemoByIdea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -195,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.test2">
+  <component name="RunManager" selected="JUnit.TestClass.test3">
     <configuration name="TestClass.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -228,12 +232,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestClass.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestClass" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.TestClass.test1" />
       <item itemvalue="JUnit.TestClass.test2" />
+      <item itemvalue="JUnit.TestClass.test3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.test3" />
         <item itemvalue="JUnit.TestClass.test2" />
         <item itemvalue="JUnit.TestClass.test1" />
       </list>
@@ -258,14 +280,12 @@
       <workItem from="1548246132589" duration="1897000" />
       <workItem from="1548860840867" duration="685000" />
       <workItem from="1548942846338" duration="1067000" />
-      <workItem from="1549025783276" duration="7084000" />
+      <workItem from="1549025783276" duration="7772000" />
+      <workItem from="1550406653645" duration="1887000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestClass_test2 - 2019.02.01 at 22h 23m 56s.xml">
-      <configuration name="TestClass.test2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestClass_test2 - 2019.02.01 at 22h 35m 56s.xml">
       <configuration name="TestClass.test2" configurationId="JUnit" />
     </history-entry>
@@ -293,9 +313,12 @@
     <history-entry file="TestClass_test2 - 2019.02.01 at 22h 50m 37s.xml">
       <configuration name="TestClass.test2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestClass_test3 - 2019.02.17 at 21h 37m 48s.xml">
+      <configuration name="TestClass.test3" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22264000" />
+    <option name="totallyTimeSpent" value="24839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,10 +330,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19365722" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19703104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,50 +373,35 @@
     <MESSAGE value="389找不同" />
     <option name="LAST_COMMIT_MESSAGE" value="389找不同" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
-          <line>165</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../JDK/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#2896#2897#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        <state relative-caret-position="178">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="231" column="5" lean-forward="true" selection-start-line="158" selection-start-column="4" selection-end-line="231" selection-end-column="5" />
+        <state relative-caret-position="133">
+          <caret line="232" column="6" selection-start-line="232" selection-start-column="6" selection-end-line="232" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#findTheDifference#0;class#Solution#0" />
@@ -403,6 +411,7 @@
             <element signature="method#reverseString#0;class#Solution#0" />
             <element signature="method#reverseWords#0;class#Solution#0" />
             <element signature="method#reverseList#0;class#Solution#0" />
+            <element signature="method#generateMatrix#0;class#Solution#0" />
           </folding>
         </state>
       </provider>

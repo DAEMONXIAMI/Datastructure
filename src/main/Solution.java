@@ -230,4 +230,16 @@ public class Solution {
         }
         return gm;
     }
+    //136.只出现一次的数字
+    public int singleNumber(int[] nums) {
+        int num = 0;
+        Arrays.sort(nums);
+        for(int i=0, j=1; j<nums.length; i=i+2,j=j+2){
+            if (nums[i] != nums[j]) {
+                int c = nums[j+1];
+                return c==nums[i]?nums[j]:nums[i];
+            }
+        }
+        return nums[nums.length-1];
+    }
 }
