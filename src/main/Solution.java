@@ -242,4 +242,9 @@ public class Solution {
         }
         return nums[nums.length-1];
     }
+    //169.求众数
+    public int majorityElement(int[] nums) {
+        Arrays.sort(nums);
+        return nums[nums.length/2];
+    }
 }
