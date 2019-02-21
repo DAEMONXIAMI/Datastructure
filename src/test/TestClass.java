@@ -59,6 +59,7 @@ public class TestClass {
         int[] nums = {1,3,5,6,4,8,2,1,3,5,6,4,8};
         int num = ss.singleNumber(nums);
         System.out.println(num);
+
     }
 
 }

@@ -46,7 +46,6 @@ public class Solution {
         }
     }
 */
-
     //905按奇偶数组排序
     public int[] sortArrayByParity(int[] A) {
         int temp;
@@ -74,7 +73,6 @@ public class Solution {
         }
         return A;
     }
-
     //832反转图像
     public int[][] flipAndInvertImage(int[][] A) {
             int length = A[0].length;
@@ -91,7 +89,6 @@ public class Solution {
             }
             return A;
     }
-
     //237. 删除链表中的节点
     public void deleteNode(ListNode node) {
         ListNode head = node;
@@ -103,12 +100,10 @@ public class Solution {
             }
             tail.next = null;
     }
-
     //292Nim游戏
     public boolean canWinNim(int n) {
         return(n%4 != 0);
     }
-
     //344 翻转字符串
     public void reverseString(char[] s) {
         int lo = 0;
@@ -120,7 +115,6 @@ public class Solution {
             s[hi--] = temp;
         }
     }
-
     //557.反转字符串中的单词
     public String reverseWords(String s) {
         String[] s1 = s.split(" ");
@@ -246,5 +240,30 @@ public class Solution {
     public int majorityElement(int[] nums) {
         Arrays.sort(nums);
         return nums[nums.length/2];
+    }
+    //235.二叉搜索树的最近公共祖先
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root==null) return null;
+
+        if(root.val>=p.val && root.val<=q.val) return root;
+
+        if(root.val>p.val && root.val>q.val) return lowestCommonAncestor(root.left, p, q);
+
+        if(root.val<p.val && root.val<q.val) return lowestCommonAncestor(root.right, p, q);
+
+        return root;
+    }
+    //9.回文数
+    public boolean isPalindrome(int x){
+        return String.valueOf(x).equals(new StringBuffer(x + "").reverse().toString());
     }
 }
