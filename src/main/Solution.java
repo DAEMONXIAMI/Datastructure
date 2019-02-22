@@ -266,4 +266,27 @@ public class Solution {
     public boolean isPalindrome(int x){
         return String.valueOf(x).equals(new StringBuffer(x + "").reverse().toString());
     }
+    //21.合并两个有序链表
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode cur = new ListNode(00);
+        ListNode root = cur;
+        while(l1!=null && l2!=null){
+            if(l1.val<l2.val){
+                cur.next = l1;
+                cur = cur.next;
+                l1 = l1.next;
+            }else{
+                cur.next = l2;
+                cur = cur.next;
+                l2 = l2.next;
+            }
+        }
+        if(l1 == null){
+            cur.next = l2;
+        }else{
+            cur.next = l1;
+        }
+
+        return root.next;
+    }
 }
