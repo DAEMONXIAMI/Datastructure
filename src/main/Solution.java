@@ -289,4 +289,28 @@ public class Solution {
 
         return root.next;
     }
+    //122. 买股票的最佳时机 ||
+    public int maxProfit(int[] prices) {
+        int profit = 0;
+
+        for(int buytime = 0, selltime = 1; buytime < selltime && selltime < prices.length; ){
+            if(prices[buytime] > prices[selltime]){
+                buytime++;
+                selltime++;
+                continue;
+            }
+
+            if(selltime < prices.length-1 && prices[selltime] < prices[selltime+1]){
+                selltime++;
+                continue;
+            }
+
+            profit = profit + prices[selltime] - prices[buytime];
+            buytime = selltime + 1;
+            selltime = selltime + 2;
+        }
+
+        return profit;
+    }
+
 }
