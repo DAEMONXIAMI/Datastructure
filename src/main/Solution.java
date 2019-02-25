@@ -312,5 +312,26 @@ public class Solution {
 
         return profit;
     }
+    //面试题3. 二维数组中的查找
+    public Boolean searchMatrix (int[][] matrix, int target){
+
+        if(matrix==null||matrix.length==0||(matrix.length==1&&matrix[0].length==0)) return false;
+
+        for(int i = 0, j = matrix[0].length - 1; i <= matrix.length-1 && j >= 0; ){
+            if(target == matrix[i][j]) return true;
+
+            if(target > matrix[i][j]){
+                i++;
+                continue;
+            }
+
+            if (target < matrix[i][j]){
+                j--;
+                continue;
+            }
+        }
+
+        return false;
+    }
 
 }
