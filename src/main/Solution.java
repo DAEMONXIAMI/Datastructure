@@ -333,5 +333,37 @@ public class Solution {
 
         return false;
     }
+    //面试题4. 替换空格
+    public String replaceBlank(String string){
+        StringBuffer str = new StringBuffer(string);
+        int blankcount = 0;
+
+        if (string == null) return null;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == ' ') {
+                blankcount++;
+            }
+        }
+
+        int lengthNew = str.length() + blankcount*2;
+        str.setLength(lengthNew);
+
+        int indexOfOriginal = str.length() - 1;
+        int indexOfNew = lengthNew - 1;
+
+        while (indexOfOriginal != indexOfNew) {
+            if(str.charAt(indexOfOriginal) == ' '){
+                str.setCharAt(indexOfNew--, '0');
+                str.setCharAt(indexOfNew--, '2');
+                str.setCharAt(indexOfNew--, '%');
+            }
+            else {
+                str.setCharAt(indexOfNew--, str.charAt(indexOfOriginal--));
+            }
+        }
+
+        return str.toString();
+    }
 
 }
