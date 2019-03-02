@@ -1,7 +1,9 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Stack;
 
 //注释内容：包含题号和题目，测试代码再test中，每次做题都把上一次方法改成非静态。
 public class Solution {
@@ -364,6 +366,38 @@ public class Solution {
         }
 
         return str.toString();
+    }
+    //剑指offer5. 从尾到头打印链表
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode){
+        if (listNode != null) {
+            this.printListFromTailToHead(listNode.next);
+            arrayList.add(listNode.val);
+        }
+        return  arrayList;
+    }
+    //剑指offer6.重建二叉树
+    public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+        return null;
+    }
+    //剑指offer7，用两个栈实现队列
+    Stack<Integer> stack1 = new Stack<Integer>();
+    Stack<Integer> stack2 = new Stack<Integer>();
+
+    public void push(int node) {
+        stack1.push(node);
+    }
+
+    public int pop() {
+        if(stack1.empty()&&stack2.empty()){
+            throw new RuntimeException("Queue is empty!");
+        }
+        if(stack2.empty()){
+            while(!stack1.empty()){
+                stack2.push(stack1.pop());
+            }
+        }
+        return stack2.pop();
     }
 
 }
