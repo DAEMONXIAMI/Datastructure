@@ -16,12 +16,13 @@
     <session id="1687464139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -29,7 +30,8 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,13 +46,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3965" />
+          <entry key="java" value="4068" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3965" />
+          <entry key="JAVA" value="4068" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
@@ -61,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+            <state relative-caret-position="146">
+              <caret line="424" column="29" selection-start-line="424" selection-start-column="29" selection-end-line="424" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#sortArrayByParity#0;class#Solution#0" />
@@ -81,13 +83,9 @@
                 <element signature="method#maxProfit#0;class#Solution#0" />
                 <element signature="method#searchMatrix#0;class#Solution#0" />
                 <element signature="method#replaceBlank#0;class#Solution#0" />
-                <element signature="e#11081#11090#0" expanded="true" />
                 <element signature="method#printListFromTailToHead#0;class#Solution#0" />
-                <element signature="e#11426#11427#0" expanded="true" />
-                <element signature="e#11443#11444#0" expanded="true" />
-                <element signature="e#11516#11525#0" expanded="true" />
-                <element signature="e#11566#11575#0" expanded="true" />
                 <element signature="method#pop#0;class#Solution#0" />
+                <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
               </folding>
             </state>
           </provider>
@@ -161,9 +159,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -284,6 +282,8 @@
       <workItem from="1551092938734" duration="1810000" />
       <workItem from="1551181989057" duration="3428000" />
       <workItem from="1551533369496" duration="955000" />
+      <workItem from="1551880244556" duration="625000" />
+      <workItem from="1552050904776" duration="1025000" />
     </task>
     <servers />
   </component>
@@ -320,7 +320,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34967000" />
+    <option name="totallyTimeSpent" value="36617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,7 +332,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="782" height="831" extended-state="0" />
+    <frame x="760" y="0" width="784" height="832" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.41480446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -384,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="383" column="8" selection-start-line="383" selection-start-column="8" selection-end-line="383" selection-end-column="8" />
+        <state relative-caret-position="146">
+          <caret line="424" column="29" selection-start-line="424" selection-start-column="29" selection-end-line="424" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#sortArrayByParity#0;class#Solution#0" />
@@ -404,13 +404,9 @@
             <element signature="method#maxProfit#0;class#Solution#0" />
             <element signature="method#searchMatrix#0;class#Solution#0" />
             <element signature="method#replaceBlank#0;class#Solution#0" />
-            <element signature="e#11081#11090#0" expanded="true" />
             <element signature="method#printListFromTailToHead#0;class#Solution#0" />
-            <element signature="e#11426#11427#0" expanded="true" />
-            <element signature="e#11443#11444#0" expanded="true" />
-            <element signature="e#11516#11525#0" expanded="true" />
-            <element signature="e#11566#11575#0" expanded="true" />
             <element signature="method#pop#0;class#Solution#0" />
+            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
           </folding>
         </state>
       </provider>

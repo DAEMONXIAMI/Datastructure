@@ -399,5 +399,41 @@ public class Solution {
         }
         return stack2.pop();
     }
-
+    //剑指offer8 旋转数组的最小值
+    public int minNumberInRotateArray(int [] array) {
+        if(array.length == 0) return 0;
+        int min = array[0];
+        int i = 0;
+        int j = array.length-1;
+        while(i<j-1){
+            int mid = (i + j)/2;
+            if(array[mid] > array[j]){
+                i = mid;
+            }else{
+                j =mid;
+            }
+        }
+        return array[j];
+    }
+    //剑指offer 9 斐波那契数列
+    //解法1：性能最差，写法最简单，因为重复计算许多数
+    public int Fibonacci(int n) {
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        return Fibonacci(n-1) +Fibonacci(n-2);
+    }
+    //解法2：死方法，比递归想法简单，而且比递归快速
+    public int Fibonacci2(int n) {
+        if(n == 0) return 0;
+        if(n == 1) return 1;
+        int FibonacciA = 0;
+        int FibonacciB = 1;
+        int FibonacciN = 0;
+        for(int i = 2; i <= n; i ++){
+            FibonacciN = FibonacciA + FibonacciB;
+            FibonacciA = FibonacciB;
+            FibonacciB = FibonacciN;
+        }
+        return FibonacciN;
+    }
 }
