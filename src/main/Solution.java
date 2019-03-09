@@ -1,9 +1,6 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Stack;
+import java.util.*;
 
 //注释内容：包含题号和题目，测试代码再test中，每次做题都把上一次方法改成非静态。
 public class Solution {
@@ -435,5 +432,91 @@ public class Solution {
             FibonacciB = FibonacciN;
         }
         return FibonacciN;
+    }
+    //804唯一莫尔斯密码
+    public int uniqueMorseRepresentations(String[] words) {
+        if(words ==null || words[0] == "") return 0;
+
+        int l = words.length;
+        String unWords = null;
+        Set wordSet = new HashSet();
+        String[] morseTable = {".-","-...","-.-.","-..",".","..-.","--.","....","..",
+                ".---","-.-",".-..","--","-.","---",".--.","--.-",".-.",
+                "...","-","..-","...-",".--","-..-","-.--","--.."};
+        for(int i = 0; i < l; i ++){
+            unWords = null;
+            String n = words[i];
+            char[] n1 = n.toCharArray();
+            int n1l = n.length();
+            for(int j =0; j < n1l; j++){
+                int key = n1[j] - 97;
+                unWords = unWords + morseTable[key];
+            }
+            wordSet.add(unWords);
+        }
+        return wordSet.size();
+    }
+    //383. 赎金信
+    public boolean canConstruct(String ransomNote, String magazine) {
+        if(ransomNote == null) return false;
+        if(ransomNote != null && magazine == null) return false;
+
+        char[] ransomChar = ransomNote.toCharArray();
+        char[] magazineChar = magazine.toCharArray();
+        int[] ransomNum = new int[26];
+        int[] magazineNum = new int[26];
+        int subscrip = 0;
+
+        for(int i = 0; i < ransomChar.length; i++){
+            subscrip = ransomChar[i] - 'a';
+            ransomNum[subscrip] ++;
+        }
+        for(int i = 0; i < magazineChar.length; i++){
+            subscrip = magazineChar[i] - 'a';
+            magazineNum[subscrip] ++;
+        }
+        for(int i = 0; i < 26; i ++){
+            if(ransomNum[i] > magazineNum[i]) return false;
+        }
+        return true;
+    }
+    //14.最长公共前缀
+    public String longestCommonPrefix(String[] strs) {
+        if(strs == null || strs[0] == "") return "";
+        StringBuffer lcp = new StringBuffer();
+        int l = strs.length;
+        for (int i = 0; i < strs[0].length(); i++) {
+            char flag = strs[0].toCharArray()[i];
+            for (int j = 1; j < l; j++) {
+                if(flag != strs[j].toCharArray()[i]) return "";
+            }
+            lcp.append(flag);
+        }
+        return lcp.toString();
+    }
+    //14. 最长公共前缀
+    public String longestCommonPrefix2(String[] strs) {
+        int ll = 0;
+        if(strs == null ) return "";
+        if(strs.length == 1) return strs[0];
+        if(strs.length > 1)
+        {ll = strs[0].length();}
+
+        StringBuilder lcp = new StringBuilder();
+        int l = strs.length;
+
+        outer:
+        for (int i = 0; i < ll; i++) {
+            char flag = strs[0].toCharArray()[i];
+            for (int j = 1; j < l; j++) {
+                if(strs[j].toCharArray().length > i){
+                    if(flag != strs[j].toCharArray()[i]) break outer;}
+                else{
+                    break outer;
+                }
+            }
+            lcp.append(flag);
+        }
+        return lcp.toString();
     }
 }
