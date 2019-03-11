@@ -519,4 +519,36 @@ public class Solution {
         }
         return lcp.toString();
     }
+
+    public boolean isPalindrome(String s) {
+        if(s == ""||s == " ") return true;
+        s = s.toLowerCase();
+        int charNum = 0;
+        char[] sc = s.toCharArray();
+        for (int i = 0, j = sc.length - 1; i < j;) {
+            if ('a' <= sc[i] && sc[i] <= 'z') {
+                if ('a' <= sc[j] && sc[j] <= 'z') {
+                    if (sc[i] == sc[j]) {
+                        charNum = 1;
+                        i++;
+                        j--;
+                        continue;
+                    } else {
+                        return false;
+                    }
+                } else {
+                    j --;
+                    continue;
+                }
+            } else {
+                i ++;
+                continue;
+            }
+        }
+        if (charNum == 0) {
+            return false;
+        }
+        return true;
+    }
+
 }
