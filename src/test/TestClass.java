@@ -65,10 +65,9 @@ public class TestClass {
     @Test
     public void test4() {
         Solution ss = new Solution();
-        String s = "A man, a plan, a canal: Panama";
-        String s2 = "";
-        Boolean b = ss.isPalindrome(s2);
-        System.out.println(b);
+        int[] prices = {7,1,5,3,6,4};
+        int maxProfit = ss.maxProfit(prices);
+        System.out.println(maxProfit);
     }
 
 }

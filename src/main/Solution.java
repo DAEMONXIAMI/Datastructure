@@ -289,7 +289,7 @@ public class Solution {
         return root.next;
     }
     //122. 买股票的最佳时机 ||
-    public int maxProfit(int[] prices) {
+    /*public int maxProfit(int[] prices) {
         int profit = 0;
 
         for(int buytime = 0, selltime = 1; buytime < selltime && selltime < prices.length; ){
@@ -310,7 +310,7 @@ public class Solution {
         }
 
         return profit;
-    }
+    }*/
     //面试题3. 二维数组中的查找
     public Boolean searchMatrix (int[][] matrix, int target){
 
@@ -549,6 +549,35 @@ public class Solution {
             return false;
         }
         return true;
+    }
+
+    // 121 买卖股票的最佳时机
+    public int maxProfit(int[] prices) {
+        if(prices == )
+        return max(prices, prices.length - 1);
+    }
+    public int max(int[] prices, int l){
+        int profit = 0;
+        if(l == 0) profit =0;
+        if(l == 1) profit = (prices[1] - prices[0]) > 0 ? (prices[1] - prices[0]) : 0;
+        else{
+            profit = profit + Math.max(max(prices, l - 1), prices[l] - minPrice(prices, l - 1));
+        }
+        return profit;
+    }
+
+    public int minPrice (int[] prices, int l2){
+        int min = prices[l2];
+        for(int i = l2; i > 0; ){
+            if(prices[i] < prices[i - 1]) {
+                min = prices[i] ;
+                i --;
+            }
+            else{
+                i --;
+            }
+        }
+        return min;
     }
 
 }
