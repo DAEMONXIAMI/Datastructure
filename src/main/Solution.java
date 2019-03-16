@@ -551,9 +551,9 @@ public class Solution {
         return true;
     }
 
-    // 121 买卖股票的最佳时机
+    // *****121 买卖股票的最佳时机
     public int maxProfit(int[] prices) {
-        if(prices == )
+        //if(prices == 0)
         return max(prices, prices.length - 1);
     }
     public int max(int[] prices, int l){
@@ -578,6 +578,20 @@ public class Solution {
             }
         }
         return min;
+    }
+    //二进制中1的个数
+    public int NumberOf1(int n) {
+        int count = 0;
+        int flag = 1;
+        while(flag != 0){
+            if((n & flag) != 0){
+                count ++;
+                flag = flag << 1;
+            }else{
+                flag = flag << 1;
+            }
+        }
+        return count;
     }
 
 }
