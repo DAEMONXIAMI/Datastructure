@@ -593,5 +593,27 @@ public class Solution {
         }
         return count;
     }
+    //数值的整数次方
+    public double Power(double base, int exponent) {
+        double answer = 1.0;
+        if (exponent == 0) {
+            return 1;
+        }
+        if (base == 0) {
+            return 0;
+        }
+        if (exponent > 0) {
+            for (int i = 1; i <= exponent; i++) {
+                answer = answer * base;
+            }
+        }
+        if (exponent < 0) {
+            for (int i = -1; i >= exponent; i--) {
+                answer = answer * base;
+            }
+            answer = 1.0 / answer;
+        }
+        return answer;
+    }
 
 }
