@@ -65,9 +65,12 @@ public class TestClass {
     @Test
     public void test4() {
         Solution ss = new Solution();
-        int[] prices = {7,1,5,3,6,4};
-        int maxProfit = ss.maxProfit(prices);
-        System.out.println(maxProfit);
+        int[] nums1 = {1, 2};
+        int[] nums2 = {1, 2, 1, 3};
+
+         int[] ans = ss.intersect(nums1, nums2);
+         for(int i: ans)
+        System.out.println(i);
     }
 
 }

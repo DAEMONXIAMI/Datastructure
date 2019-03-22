@@ -615,5 +615,95 @@ public class Solution {
         }
         return answer;
     }
+    //调整数字位置，使得奇数在前，偶数在后
+    public void reOrderArray(int [] array) {
+        for(int i = 0, j = array.length - 1; i < j;){
+            while(!isOdd(array[i]) && i < j){
+                i ++;
+            }
+            while(isOdd(array[j]) && i < j){
+                j --;
+            }
+            if(i >= j) break;
+
+            swap(array, i, j);
+            i ++;
+            j --;
+        }
+    }
+
+    public Boolean isOdd(int num){
+        Boolean boo = (num % 2) == 0;
+        System.out.println(num +":"+ boo);
+        return (num % 2) == 0;
+    }
+
+    public void swap(int[] array, int i, int j){
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    //
+/*    public int removeDuplicates(int[] nums) {
+        Set<Integer> rmnums = new HashSet<Integer>();
+        for(int i = 0; i <= nums.length - 1; i++){
+            rmnums.add(nums[i]);
+        }
+        Object[] ans = rmnums.toArray();
+        int ans2 = Integer.parseInt(ans.toString());
+        return nums.length;
+    }*/
+    //
+    public void rotate(int[] nums, int k) {
+        if(k == 0 || nums.length == 1) return;
+        int sub = 0;
+        int start = 0;
+        int nextSub = 0;
+        int temp = nums[0];
+        int temp2 = 0;
+        for(int i = 0; i < nums.length; i ++){
+            nextSub = (sub + k) <= (nums.length - 1) ? (sub + k) : ((sub + k) % nums.length);
+            temp2 = nums[nextSub];
+            nums[nextSub] = temp;
+            temp = temp2;
+            sub = nextSub;
+            ArrayList arrayList = new ArrayList();
+          //Integer[] adaf =  (Integer[]) arrayList.toArray(new Integer[arrayList.size()]);
+            if(nextSub == start){
+                start = ++sub;
+                temp = nums[sub];
+            }
+        }
+    }
+    //
+    public int[] intersect(int[] nums1, int[] nums2) {
+        if(nums1 == null || nums2 == null) return null;
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        List<Integer> ans = new ArrayList<Integer>();
+        for(int i = 0, j = 0; i < nums1.length && j < nums2.length; ){
+            if(nums1[i] == nums2[j]){
+                ans.add(nums1[i]);
+                i ++;
+                j ++;
+                continue;
+            }
+            if(nums1[i] > nums1[j]){
+                j ++;
+                continue;
+            }
+            if(nums1[i] < nums1[j]){
+                i ++;
+                continue;
+            }
+        }
+        int[] ans2 = new int[ans.size()];
+        int sub = 0;
+        for(int i : ans){
+            ans2[sub++] = i;
+        }
+        return ans2;
+    }
+
 
 }

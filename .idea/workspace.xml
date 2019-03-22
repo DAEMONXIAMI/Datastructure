@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4641c3-683a-43d4-9934-17a4428122bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/NodeNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,12 +20,13 @@
     <session id="1687464139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="25" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.0" value="4" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
-          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.22" value="4" />
           <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
@@ -32,23 +38,23 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Java小知识" value="1" />
-          <entry key="class" value="5" />
+          <entry key="class" value="8" />
           <entry key="iml" value="1" />
-          <entry key="java" value="13" />
+          <entry key="java" value="14" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
+          <entry key="CLASS" value="8" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="14" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -56,13 +62,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="5851" />
+          <entry key="java" value="7082" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5851" />
+          <entry key="JAVA" value="7082" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
@@ -70,11 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="594" column="5" selection-start-line="594" selection-start-column="5" selection-end-line="594" selection-end-column="5" />
+            <state relative-caret-position="4636">
+              <caret line="707" selection-start-line="707" selection-end-line="707" />
               <folding>
                 <element signature="method#sortArrayByParity#0;class#Solution#0" />
                 <element signature="method#flipAndInvertImage#0;class#Solution#0" />
@@ -102,7 +108,18 @@
                 <element signature="method#maxProfit#0;class#Solution#0" />
                 <element signature="method#max#0;class#Solution#0" />
                 <element signature="method#minPrice#0;class#Solution#0" />
+                <element signature="method#Power#0;class#Solution#0" />
+                <element signature="method#reOrderArray#0;class#Solution#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/NodeNum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -110,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+            <state relative-caret-position="1311">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/main/TCPClient.java" />
         <option value="$PROJECT_DIR$/src/test/TestClass.java" />
         <option value="$PROJECT_DIR$/src/main/Solution.java" />
+        <option value="$PROJECT_DIR$/src/main/NodeNum.java" />
       </list>
     </option>
   </component>
@@ -166,8 +184,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="460" />
-    <option name="y" value="35" />
+    <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -179,8 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +225,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +235,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552829164139" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553170592430" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ssm/项目源码/SSMDemoByIdea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -369,43 +386,47 @@
       <workItem from="1552305508755" duration="3221000" />
       <workItem from="1552396138296" duration="1681000" />
       <workItem from="1552738260199" duration="1363000" />
+      <workItem from="1552829037846" duration="2071000" />
+      <workItem from="1552977822232" duration="4505000" />
+      <workItem from="1553165430002" duration="3697000" />
+      <workItem from="1553234179837" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 24m 41s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.17 at 22h 12m 59s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 24m 43s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 16h 47m 17s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 24m 57s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 16h 48m 24s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 28m 13s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 16h 48m 28s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 31m 28s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 16h 48m 30s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 31m 42s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 16h 48m 59s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 32m 41s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 19h 30m 03s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 36m 23s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 19h 30m 13s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 36m 48s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 19h 31m 10s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestClass_test4 - 2019.03.12 at 21h 37m 09s.xml">
+    <history-entry file="TestClass_test4 - 2019.03.19 at 19h 32m 51s.xml">
       <configuration name="TestClass.test4" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48760000" />
+    <option name="totallyTimeSpent" value="59631000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,9 +438,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34008098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17881241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -428,7 +450,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33841464" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33841464" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3734756" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,6 +481,30 @@
     <MESSAGE value="389找不同" />
     <option name="LAST_COMMIT_MESSAGE" value="389找不同" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
+          <line>620</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
+          <line>657</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
+          <line>683</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://$PROJECT_DIR$/../../JDK/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -483,10 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="3099" column="5" selection-start-line="3099" selection-start-column="5" selection-end-line="3099" selection-end-column="5" />
-          <folding>
-            <element signature="e#121727#121728#0" expanded="true" />
-            <element signature="e#121769#121770#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -541,17 +576,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="247">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="594" column="5" selection-start-line="594" selection-start-column="5" selection-end-line="594" selection-end-column="5" />
+        <state relative-caret-position="4636">
+          <caret line="707" selection-start-line="707" selection-end-line="707" />
           <folding>
             <element signature="method#sortArrayByParity#0;class#Solution#0" />
             <element signature="method#flipAndInvertImage#0;class#Solution#0" />
@@ -579,14 +621,16 @@
             <element signature="method#maxProfit#0;class#Solution#0" />
             <element signature="method#max#0;class#Solution#0" />
             <element signature="method#minPrice#0;class#Solution#0" />
+            <element signature="method#Power#0;class#Solution#0" />
+            <element signature="method#reOrderArray#0;class#Solution#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        <state relative-caret-position="1311">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -597,6 +641,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NodeNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>
