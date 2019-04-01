@@ -722,5 +722,19 @@ public class Solution {
         }
         return ans;
     }
+    //反转链表
+    public ListNode ReverseList(ListNode head) {
+        if(head == null || head.next == null) return head;
+        ListNode cur = head;
+        ListNode next = head.next;
+        ListNode pre = null;
+        while(cur != null){
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
 
+        }
+        return pre;
+    }
 }
