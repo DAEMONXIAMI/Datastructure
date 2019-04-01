@@ -704,6 +704,23 @@ public class Solution {
         }
         return ans2;
     }
-
+    //链表中倒数第k个节点
+    public ListNode FindKthToTail(ListNode head,int k) {
+        if(head == null || k <= 0) return null;
+        ListNode cur = head;
+        ListNode ans = head;
+        for(int i = 0; i < k - 1; i ++){
+            if(cur.next != null){
+                cur = cur.next;
+            }else{
+                return null;
+            }
+        }
+        while(cur.next != null){
+            cur = cur.next;
+            ans = ans.next;
+        }
+        return ans;
+    }
 
 }
