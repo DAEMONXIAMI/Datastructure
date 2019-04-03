@@ -752,4 +752,32 @@ public class Solution {
         }
         return head;
     }
+    //树的子结构
+    public boolean HasSubtree(TreeNode root1,TreeNode root2) {
+        boolean result = false;
+        if(root1 != null && root2 != null){
+            if(root1.val == root2.val){
+                result = doesTree1HaveTree2(root1, root2);
+            }
+            if(!result)
+                result = HasSubtree(root1.left, root2);
+            if(!result)
+                result = HasSubtree(root1.right, root2);
+        }
+        return result;
+    }
+
+    public boolean doesTree1HaveTree2(TreeNode root1, TreeNode root2){
+        if(root2 == null){
+            return true;
+        }
+        else if(root1 == null){
+            return false;
+        }
+        else if(root1.val != root2.val){
+            return false;
+        }
+
+        return doesTree1HaveTree2(root1.left, root2.left) && doesTree1HaveTree2(root1.right, root2.right);
+    }
 }
