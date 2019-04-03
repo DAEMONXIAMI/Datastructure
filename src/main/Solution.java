@@ -780,4 +780,20 @@ public class Solution {
 
         return doesTree1HaveTree2(root1.left, root2.left) && doesTree1HaveTree2(root1.right, root2.right);
     }
+    //二叉树镜像
+    public void Mirror(TreeNode root) {
+        if(root == null || (root.left == null && root.right == null)){
+            return ;
+        }
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+
+        if(root.left != null){
+            Mirror(root.left);
+        }
+        if(root.right != null){
+            Mirror(root.right);
+        }
+    }
 }
