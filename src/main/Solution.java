@@ -796,4 +796,31 @@ public class Solution {
             Mirror(root.right);
         }
     }
+    //纸牌游戏
+    public void cardGame(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+        while(sc.hasNext()){
+            for(int i = 0; i < n; i ++){
+                a[i] = sc.nextInt();
+            }
+        }
+        Arrays.sort(a);
+        int c = 0;
+        int b = 0;
+        boolean flag = true;
+        for(int i = n - 1; i >= 0; i --){
+            if(flag){
+                b = b + a[i];
+                flag = false;
+            }else{
+                c = c + a[i];
+                flag = true;
+            }
+        }
+        int ans = b - c;
+        System.out.println(ans);
+    }
+
 }
