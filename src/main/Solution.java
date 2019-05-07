@@ -822,5 +822,9 @@ public class Solution {
         int ans = b - c;
         System.out.println(ans);
     }
+    //顺时针打印矩阵
+    public ArrayList<Integer> printMatrix(int [][] matrix) {
+        
+    }
 
 }

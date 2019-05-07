@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf4641c3-683a-43d4-9934-17a4428122bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/NodeNum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/main/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/test/TestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,25 +16,27 @@
     <session id="1687464139">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="30" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="2" />
-          <entry key="project.open.time.22" value="4" />
+          <entry key="project.open.time.22" value="5" />
+          <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,13 +60,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="7082" />
+          <entry key="java" value="7179" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7082" />
+          <entry key="JAVA" value="7179" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
@@ -76,49 +74,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4636">
-              <caret line="707" selection-start-line="707" selection-end-line="707" />
+            <state relative-caret-position="523">
+              <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
               <folding>
-                <element signature="method#sortArrayByParity#0;class#Solution#0" />
-                <element signature="method#flipAndInvertImage#0;class#Solution#0" />
-                <element signature="method#deleteNode#0;class#Solution#0" />
-                <element signature="method#reverseString#0;class#Solution#0" />
-                <element signature="method#reverseWords#0;class#Solution#0" />
-                <element signature="method#reverseList#0;class#Solution#0" />
-                <element signature="method#generateMatrix#0;class#Solution#0" />
-                <element signature="method#singleNumber#0;class#Solution#0" />
-                <element signature="method#majorityElement#0;class#Solution#0" />
-                <element signature="class#TreeNode#0;class#Solution#0" />
-                <element signature="method#lowestCommonAncestor#0;class#Solution#0" />
-                <element signature="method#isPalindrome#0;class#Solution#0" />
-                <element signature="method#mergeTwoLists#0;class#Solution#0" />
-                <element signature="method#searchMatrix#0;class#Solution#0" />
-                <element signature="method#replaceBlank#0;class#Solution#0" />
-                <element signature="method#printListFromTailToHead#0;class#Solution#0" />
-                <element signature="method#pop#0;class#Solution#0" />
-                <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
-                <element signature="method#Fibonacci2#0;class#Solution#0" />
-                <element signature="method#uniqueMorseRepresentations#0;class#Solution#0" />
-                <element signature="method#canConstruct#0;class#Solution#0" />
-                <element signature="method#longestCommonPrefix2#0;class#Solution#0" />
-                <element signature="method#isPalindrome#1;class#Solution#0" />
-                <element signature="method#maxProfit#0;class#Solution#0" />
-                <element signature="method#max#0;class#Solution#0" />
-                <element signature="method#minPrice#0;class#Solution#0" />
-                <element signature="method#Power#0;class#Solution#0" />
-                <element signature="method#reOrderArray#0;class#Solution#0" />
+                <element signature="e#922#2186#0" />
+                <element signature="e#2191#2717#0" />
+                <element signature="e#2722#3018#0" />
+                <element signature="e#3108#3364#0" />
+                <element signature="e#3369#3893#0" />
+                <element signature="e#3898#4289#0" />
+                <element signature="e#4294#7011#0" />
+                <element signature="e#7016#7365#0" />
+                <element signature="e#7370#7493#0" />
+                <element signature="e#7498#7672#0" />
+                <element signature="e#7677#8064#0" />
+                <element signature="e#8069#8210#0" />
+                <element signature="e#8215#8793#0" />
+                <element signature="e#8798#10022#0" />
+                <element signature="e#10027#10952#0" />
+                <element signature="e#11043#11285#0" />
+                <element signature="e#11596#11893#0" />
+                <element signature="e#11898#12307#0" />
+                <element signature="e#12511#12918#0" />
+                <element signature="e#12923#13774#0" />
+                <element signature="e#13779#14610#0" />
+                <element signature="e#15115#15861#0" />
+                <element signature="e#15867#16736#0" />
+                <element signature="e#16742#16883#0" />
+                <element signature="e#16888#17215#0" />
+                <element signature="e#17221#17532#0" />
+                <element signature="e#17855#18413#0" />
+                <element signature="e#18418#18814#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/NodeNum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
+            <state relative-caret-position="1140">
               <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
             </state>
           </provider>
@@ -139,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -172,8 +170,8 @@
         <option value="$PROJECT_DIR$/src/main/TCPServer.java" />
         <option value="$PROJECT_DIR$/src/main/TCPClient.java" />
         <option value="$PROJECT_DIR$/src/test/TestClass.java" />
-        <option value="$PROJECT_DIR$/src/main/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/NodeNum.java" />
+        <option value="$PROJECT_DIR$/src/main/Solution.java" />
       </list>
     </option>
   </component>
@@ -183,8 +181,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="950" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="695" />
+    <option name="y" value="5" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
@@ -389,7 +388,13 @@
       <workItem from="1552829037846" duration="2071000" />
       <workItem from="1552977822232" duration="4505000" />
       <workItem from="1553165430002" duration="3697000" />
-      <workItem from="1553234179837" duration="598000" />
+      <workItem from="1553234179837" duration="797000" />
+      <workItem from="1554122380166" duration="1284000" />
+      <workItem from="1554288473235" duration="1256000" />
+      <workItem from="1554721711092" duration="882000" />
+      <workItem from="1554727104670" duration="64000" />
+      <workItem from="1555307138742" duration="1255000" />
+      <workItem from="1555575109152" duration="600000" />
     </task>
     <servers />
   </component>
@@ -426,7 +431,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59631000" />
+    <option name="totallyTimeSpent" value="65171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,10 +443,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17881241" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19553073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,18 +494,6 @@
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
-          <line>657</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/Solution.java</url>
-          <line>683</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -543,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,9 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,9 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,38 +575,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4636">
-          <caret line="707" selection-start-line="707" selection-end-line="707" />
+        <state relative-caret-position="523">
+          <caret line="828" lean-forward="true" selection-start-line="828" selection-end-line="828" />
           <folding>
-            <element signature="method#sortArrayByParity#0;class#Solution#0" />
-            <element signature="method#flipAndInvertImage#0;class#Solution#0" />
-            <element signature="method#deleteNode#0;class#Solution#0" />
-            <element signature="method#reverseString#0;class#Solution#0" />
-            <element signature="method#reverseWords#0;class#Solution#0" />
-            <element signature="method#reverseList#0;class#Solution#0" />
-            <element signature="method#generateMatrix#0;class#Solution#0" />
-            <element signature="method#singleNumber#0;class#Solution#0" />
-            <element signature="method#majorityElement#0;class#Solution#0" />
-            <element signature="class#TreeNode#0;class#Solution#0" />
-            <element signature="method#lowestCommonAncestor#0;class#Solution#0" />
-            <element signature="method#isPalindrome#0;class#Solution#0" />
-            <element signature="method#mergeTwoLists#0;class#Solution#0" />
-            <element signature="method#searchMatrix#0;class#Solution#0" />
-            <element signature="method#replaceBlank#0;class#Solution#0" />
-            <element signature="method#printListFromTailToHead#0;class#Solution#0" />
-            <element signature="method#pop#0;class#Solution#0" />
-            <element signature="method#minNumberInRotateArray#0;class#Solution#0" />
-            <element signature="method#Fibonacci2#0;class#Solution#0" />
-            <element signature="method#uniqueMorseRepresentations#0;class#Solution#0" />
-            <element signature="method#canConstruct#0;class#Solution#0" />
-            <element signature="method#longestCommonPrefix2#0;class#Solution#0" />
-            <element signature="method#isPalindrome#1;class#Solution#0" />
-            <element signature="method#maxProfit#0;class#Solution#0" />
-            <element signature="method#max#0;class#Solution#0" />
-            <element signature="method#minPrice#0;class#Solution#0" />
-            <element signature="method#Power#0;class#Solution#0" />
-            <element signature="method#reOrderArray#0;class#Solution#0" />
+            <element signature="e#922#2186#0" />
+            <element signature="e#2191#2717#0" />
+            <element signature="e#2722#3018#0" />
+            <element signature="e#3108#3364#0" />
+            <element signature="e#3369#3893#0" />
+            <element signature="e#3898#4289#0" />
+            <element signature="e#4294#7011#0" />
+            <element signature="e#7016#7365#0" />
+            <element signature="e#7370#7493#0" />
+            <element signature="e#7498#7672#0" />
+            <element signature="e#7677#8064#0" />
+            <element signature="e#8069#8210#0" />
+            <element signature="e#8215#8793#0" />
+            <element signature="e#8798#10022#0" />
+            <element signature="e#10027#10952#0" />
+            <element signature="e#11043#11285#0" />
+            <element signature="e#11596#11893#0" />
+            <element signature="e#11898#12307#0" />
+            <element signature="e#12511#12918#0" />
+            <element signature="e#12923#13774#0" />
+            <element signature="e#13779#14610#0" />
+            <element signature="e#15115#15861#0" />
+            <element signature="e#15867#16736#0" />
+            <element signature="e#16742#16883#0" />
+            <element signature="e#16888#17215#0" />
+            <element signature="e#17221#17532#0" />
+            <element signature="e#17855#18413#0" />
+            <element signature="e#18418#18814#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/NodeNum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -639,15 +629,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/NodeNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
