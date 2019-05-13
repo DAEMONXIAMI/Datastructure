@@ -823,8 +823,20 @@ public class Solution {
         System.out.println(ans);
     }
     //顺时针打印矩阵
-    public ArrayList<Integer> printMatrix(int [][] matrix) {
+    /*public ArrayList<Integer> printMatrix(int [][] matrix) {
         
+    }*/
+
+    //买卖股票的最佳时机
+    public int maxProfit1(int[] prices) {
+        int maxMoney = 0;
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i; j < prices.length; j++) {
+                int tar = prices[i] - prices[j];
+                maxMoney = maxMoney <= tar ? maxMoney : tar;
+            }
+        }
+        return maxMoney < 0 ? - maxMoney : 0;
     }
 
 }
