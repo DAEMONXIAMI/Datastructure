@@ -71,6 +71,8 @@ public class TestClass {
          int[] ans = ss.intersect(nums1, nums2);
          for(int i: ans)
         System.out.println(i);
+
+
     }
 
 }

@@ -839,4 +839,36 @@ public class Solution {
         return maxMoney < 0 ? - maxMoney : 0;
     }
 
+    //包含min()函数的栈
+     class minStackSolution {
+
+        Stack stack = new Stack();
+        Stack tarStack = new Stack();
+        public void push(int node) {
+            stack.push(node);
+            if (!tarStack.isEmpty()) {
+                if (node <= (int) tarStack.peek()) {
+                    tarStack.push(node);
+                } else {
+                    tarStack.push(tarStack.peek());
+                }
+            } else {
+                tarStack.push(node);
+            }
+        }
+
+        public void pop() {
+            stack.pop();
+            tarStack.pop();
+        }
+
+        public int top() {
+            return (int)stack.peek();
+        }
+
+        public int min() {
+            return (int)tarStack.peek();
+        }
+    }
+
 }
