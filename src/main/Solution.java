@@ -871,4 +871,20 @@ public class Solution {
         }
     }
 
+    //面试题23 从上往下打印二叉树
+    public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
+        ArrayList<Integer> fromTopToBottomList = new ArrayList<Integer>();
+        Deque<Object> deque = new ArrayDeque<Object>();
+        TreeNode currentNode = root;
+
+        while (currentNode != null) {
+            fromTopToBottomList.add(currentNode.val);
+            if(currentNode.left != null)deque.offer(currentNode.left);
+            if(currentNode.right != null) deque.offer(currentNode.right);
+            currentNode = (TreeNode) deque.poll();
+        }
+
+        return fromTopToBottomList;
+    }
+
 }
