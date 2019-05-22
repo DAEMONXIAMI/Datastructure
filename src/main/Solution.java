@@ -1,5 +1,6 @@
 package main;
 
+import javax.sound.midi.Sequence;
 import java.util.*;
 
 //注释内容：包含题号和题目，测试代码再test中，每次做题都把上一次方法改成非静态。
@@ -871,7 +872,7 @@ public class Solution {
         }
     }
 
-    //面试题23 从上往下打印二叉树
+    //面试题23 从上往下打印二叉树 广度优先遍历
     public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
         ArrayList<Integer> fromTopToBottomList = new ArrayList<Integer>();
         Deque<Object> deque = new ArrayDeque<Object>();
@@ -885,6 +886,41 @@ public class Solution {
         }
 
         return fromTopToBottomList;
+    }
+
+    //面试题24 二叉搜索树的后续遍历序列
+    public boolean VerifySquenceOfBST(int [] sequence){
+        if (sequence.length <= 0) {
+            return false;
+        }
+        return VerifySquenceOfBSTNew(sequence, 0, sequence.length-1);
+    }
+    public boolean VerifySquenceOfBSTNew(int [] sequence, int l, int r) {
+        if (l >= r) {
+            return true;
+        }
+
+        int root = sequence[r];
+
+        //找到左子树和右子树
+        int right = r;
+        for (int i = l; i < r; i++) {
+            if (sequence[i] > root) {
+                right = i;
+                break;
+            }
+        }
+
+        //判断右子树是否有小于根节点的
+        for (int i = right; i < r; i++) {
+            if (sequence[i] < root) {
+                return false;
+            }
+        }
+
+        //递归调用Verify函数，判断左子树和右子树是否符合
+
+        return VerifySquenceOfBSTNew(sequence, l, right-1)&&VerifySquenceOfBSTNew(sequence, right, r-1);
     }
 
 }
