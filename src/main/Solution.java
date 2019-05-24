@@ -923,4 +923,34 @@ public class Solution {
         return VerifySquenceOfBSTNew(sequence, l, right-1)&&VerifySquenceOfBSTNew(sequence, right, r-1);
     }
 
+    //面试题25 二叉树中和为某一值的路径
+    public ArrayList<ArrayList<Integer>> FindPath(TreeNode root,int target) {
+        ArrayList<ArrayList<Integer>> pathAll = new ArrayList<ArrayList<Integer>>();
+        ArrayList<Integer> path = new ArrayList<Integer>();
+        find(root, target, pathAll, path);
+        return pathAll;
+    }
+
+    private void find(TreeNode root, int target, ArrayList<ArrayList<Integer>> pathAll, ArrayList<Integer> path) {
+        if (root == null) {
+            return;
+        }
+        target = target- root.val;
+
+        path.add(root.val);
+
+        if (target == 0 && root.right == null && root.left == null) {
+            pathAll.add(new ArrayList<Integer>(path));
+        }
+
+        if (root.left != null) {
+            find(root.left, target, pathAll, path);
+        }
+        if (root.right != null) {
+            find(root.right, target, pathAll, path);
+        }
+
+        path.remove(path.size() - 1);
+}
+
 }
