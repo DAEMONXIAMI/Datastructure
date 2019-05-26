@@ -953,4 +953,54 @@ public class Solution {
         path.remove(path.size() - 1);
 }
 
+    //面试题26 复杂链表的复制
+    public static class RandomListNode {
+        int label;
+        public RandomListNode next = null;
+        public RandomListNode random = null;
+
+        public RandomListNode(int label) {
+            this.label = label;
+        }
+    }
+    public static RandomListNode Clone(RandomListNode pHead)
+    {
+        if(pHead == null)
+            return null;
+        RandomListNode pHeadNew = new RandomListNode(pHead.label);
+        RandomListNode current = pHead;
+        RandomListNode currentNew = pHeadNew;
+        currentNew.next = null;
+        while(current != null /*&& currentNew != null*/){
+            if(current.next != null){
+                currentNew.next = new RandomListNode(current.next.label);
+            }
+            //currentNew.next = null;
+            current = current.next;
+            currentNew = currentNew.next;
+        }
+        current = pHead;
+        currentNew = pHeadNew;
+        while(current != null){
+            if(current.random == null){
+                currentNew.random = null;
+                current = current.next;
+                currentNew = currentNew.next;
+
+            }
+            else{
+                RandomListNode random = pHead;
+                RandomListNode randomNew = pHeadNew;
+                while(current.random != random && random != null){
+                    random = random.next;
+                    randomNew = randomNew.next;
+                }
+                currentNew.random = randomNew;
+                current = current.next;
+                currentNew = currentNew.next;
+            }
+        }
+        return pHeadNew;
+    }
+
 }
