@@ -1003,4 +1003,42 @@ public class Solution {
         return pHeadNew;
     }
 
+    //
+    public TreeNode Convert(TreeNode pRootOfTree) {
+        if (pRootOfTree == null) {
+            return null;
+        }
+        TreeNode last = null;
+        TreeNode linkNode = pRootOfTree;
+        while (linkNode != null && linkNode.left != null) {
+            linkNode = linkNode.left;
+        }
+
+        Convert2(pRootOfTree, last);
+
+        return linkNode;
+    }
+
+    private void Convert2(TreeNode pRootOfTree, TreeNode last) {
+        if (pRootOfTree == null) {
+            return;
+        }
+
+        TreeNode curr = pRootOfTree;
+        if (pRootOfTree != null && pRootOfTree.left != null) {
+            Convert2(pRootOfTree.left, last);
+        }
+        pRootOfTree.left = last;
+        if (last != null) {
+            last.right = pRootOfTree;
+        }
+        last = pRootOfTree;
+
+        if (pRootOfTree.right != null) {
+
+            Convert2(pRootOfTree.right, last);
+
+        }
+
+    }
 }
