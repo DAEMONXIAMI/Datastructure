@@ -3,6 +3,7 @@ package test;
 
 import main.ListNode;
 
+import main.MyThreadPool;
 import main.Solution;
 import org.junit.Test;
 
@@ -73,6 +74,59 @@ public class TestClass {
         System.out.println(i);
 
 
+    }
+
+    @Test
+    //junit单元测试不支持多线程
+    public void testMyThreadPool(){
+        int kkk = 0;
+        MyThreadPool myThreadPool = new MyThreadPool(3, 6);
+        for (int i = 0; i < 6; i++) {
+            System.out.println("222222");
+            myThreadPool.submit(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("一个线程被放到仓库中");
+                    try {
+                        Thread.sleep(25000);
+                    } catch (InterruptedException e) {
+                        System.out.println("一个线程被唤醒了");
+                    }
+                }
+            });
+        }
+        System.out.println(kkk);
+    }
+
+    @Test
+    public void testTest() {
+        Solution.RandomListNode r1 = new Solution.RandomListNode(1);
+        Solution.RandomListNode r2 = new Solution.RandomListNode(2);
+        Solution.RandomListNode r3 = new Solution.RandomListNode(3);
+        Solution.RandomListNode r4 = new Solution.RandomListNode(4);
+        Solution.RandomListNode r5 = new Solution.RandomListNode(5);
+        r1.next = r2;
+        r2.next = r3;
+        r3.next = r4;
+        r4.next = r5;
+        r5.next = null;
+        r1.random = r3;
+        r2.random = r5;
+        r3.random = null;
+        r4.random = r2;
+        r5.random = null;
+
+        Solution.RandomListNode n1 = Solution.Clone(r1);
+    }
+    @Test
+    public void mathTest(){
+        float f1 = -3.5f;
+        float f2 = 3.5f;
+        float f3 = -3.6f;
+        //Math.round()是+0.5然后向下取整，即在数轴上向左取整数
+        System.out.println(Math.round(f1));
+        System.out.println(Math.round(f2));
+        System.out.println(Math.round(f3));
     }
 
 }

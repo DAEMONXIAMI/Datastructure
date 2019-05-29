@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class MyThreadPool {
-    //1.需要一个仓库
+    //1.需要一个仓库；阻塞队列
     private BlockingQueue<Runnable> blockingQueue;
 
     //2. 一个线程的集合
