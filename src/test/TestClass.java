@@ -2,12 +2,9 @@ package test;
 
 
 import main.ListNode;
-
 import main.MyThreadPool;
 import main.Solution;
 import org.junit.Test;
-
-import java.util.HashSet;
 
 public class TestClass {
     @Test
@@ -127,6 +124,19 @@ public class TestClass {
         System.out.println(Math.round(f1));
         System.out.println(Math.round(f2));
         System.out.println(Math.round(f3));
+    }
+
+    @Test
+    public void gitTest(){
+        System.out.println("这是IDEA的git测试");
+    }
+
+    @Test
+    public void testNumberOf1Between1AndN_Solution (){
+        Solution ss = new Solution();
+        int[] number = {3,32,321};
+        String num = ss.PrintMinNumber(number);
+        System.out.println(num);
     }
 
 }

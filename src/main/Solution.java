@@ -1041,4 +1041,43 @@ public class Solution {
         }
 
     }
+
+    //整数中1出现的次数
+    public int NumberOf1Between1AndN_Solution(int n) {
+        int num = 0;
+        for (int i = 1; i <= n; i = i * 10) {
+            int k = n % (i * 10);
+            num = num + n / (10 * i) * i;
+            if (k > (i * 2 - 1)) {
+                num = num + i;
+            } else if (k < i) {
+                num = num + 0;
+            }else {
+                num = num + k - i + 1;
+            }
+        }
+        return num;
+    }
+
+
+    //把数组排成最小的数
+    public String PrintMinNumber(int [] numbers) {
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+                String ij = numbers[i] + "" + numbers[j];
+                String ji = numbers[j] + "" + numbers[i];
+                if (Integer.parseInt(ij) > Integer.parseInt(ji)) {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
+            }
+        }
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int k = 0; k < numbers.length; k++) {
+            stringBuilder.append(numbers[k]);
+        }
+        return  stringBuilder.toString();
+    }
 }
