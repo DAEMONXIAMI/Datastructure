@@ -134,8 +134,8 @@ public class TestClass {
     @Test
     public void testNumberOf1Between1AndN_Solution (){
         Solution ss = new Solution();
-        int[] number = {3,32,321};
-        String num = ss.PrintMinNumber(number);
+        int[] array = {3};
+        int num = ss.GetNumberOfK(array, 3);
         System.out.println(num);
     }
 

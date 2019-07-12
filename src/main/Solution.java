@@ -1,5 +1,8 @@
 package main;
 
+import org.junit.Test;
+import sun.reflect.generics.tree.Tree;
+
 import javax.sound.midi.Sequence;
 import java.util.*;
 
@@ -1080,4 +1083,188 @@ public class Solution {
         }
         return  stringBuilder.toString();
     }
+
+    //丑数
+    public int GetUglyNumber_Solution(int index) {
+        if (index <= 0) {
+            return -1;
+        }
+        if (index == 1) {
+            return 1;
+        }
+        int i = 0;
+        int Number = 1;
+        while (i < index) {
+            if (isUgly(Number)) {
+                i++;
+                Number++;
+            }else {
+                Number++;
+            }
+        }
+
+        return Number--;
+    }
+
+    public Boolean isUgly(int Number) {
+        while(Number%2 == 0){
+            Number = Number / 2;
+        }
+        while(Number%3 == 0){
+            Number = Number / 3;
+        }
+        while(Number%5 == 0){
+            Number = Number / 5;
+        }
+        if (Number == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    public int GetUglyNumber_Solution2(int index) {
+        if (index <= 0) {
+            return -1;
+        }
+        if (index == 1) {
+            return 1;
+        }
+
+        HashSet<Integer> hashSet = new HashSet<Integer>();
+
+        hashSet.add(1);
+
+        while (true) {
+
+        }
+    }
+
+    //第一个只出现一次的字符
+    public int FirstNotRepeatingChar(String str) {
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        for (int i = 0; i < str.length(); i++) {
+            if (hashMap.containsKey(str.charAt(i))) {
+                hashMap.put(str.charAt(i), (hashMap.get(str.charAt(i)) + 1));
+            } else {
+                hashMap.put(str.charAt(i), 1);
+            }
+        }
+
+        for (int k = 0; k < str.length(); k++) {
+            if (hashMap.get(str.charAt(k)) == 1) {
+                return k;
+            }
+        }
+        return -1;
+    }
+
+    //数组中的逆序对
+    public int InversePairs(int [] array) {
+        int p = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] > array[j]) {
+                    p++;
+                }
+            }
+        }
+
+        return p%1000000007;
+    }
+
+    //输入两个链表，找出它们的第一个公共节点
+    public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
+        if (pHead1 == null || pHead2 == null) {
+            return null;
+        }
+
+        int len1 = 0;
+        int len2 = 0;
+        ListNode cur1 = pHead1;
+        ListNode cur2 = pHead2;
+
+        while (cur1 != null) {
+            len1++;
+            cur1 = cur1.next;
+        }
+        while (cur2 != null) {
+            len2++;
+            cur2 = cur2.next;
+        }
+        cur1 = pHead1;
+        cur2 = pHead2;
+        if (len1 > len2) {
+            for (int i = 1; i <= len1 - len2; i++) {
+                cur1 = cur1.next;
+            }
+        }else {
+            for (int i = 1; i <= len2 - len1; i++) {
+                cur2= cur2.next;
+            }
+        }
+        while (cur1 != cur2) {
+            cur1 = cur1.next;
+            cur2 = cur2.next;
+        }
+        return cur1;
+    }
+
+    public int GetNumberOfK(int [] array , int k) {
+        int index = findIndex(array, k, 0, array.length-1);
+        if(index == -1){
+            return 0;
+        }
+        int i = index - 1;
+        int j = index + 1;
+        int num = 1;
+        while (i >= 0 && array[i] == k) {
+            num++;
+            i--;
+        }
+        while (j < array.length && array[j] == k) {
+            num++;
+            j++;
+        }
+
+        return num;
+    }
+    public int findIndex(int[] array,int k, int l, int r){
+        if(l > r){
+            return -1;
+        }
+        int mid = (l + r)/2;
+        if(array[mid] == k){
+            return mid;
+        }
+        if(array[mid] > k){
+            return findIndex(array, k, l, mid-1);
+        }
+        if(array[mid] < k){
+            return findIndex(array, k, mid +1, r);
+        }
+        return -1;
+    }
+
+    //二叉树的深度
+    public int TreeDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = TreeDepth(root.left);
+        int right = TreeDepth(root.right);
+
+        return Math.max(left, right) + 1;
+    }
+
+    //平衡二叉树
+    public boolean IsBalanced_Solution(TreeNode root) {
+        if(root)
+    }
+
+    //数组中只出现一次的数字
+    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
+
+    }
+
 }
