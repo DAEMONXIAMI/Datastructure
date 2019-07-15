@@ -1259,7 +1259,26 @@ public class Solution {
 
     //平衡二叉树
     public boolean IsBalanced_Solution(TreeNode root) {
-        if(root)
+        if (root == null) {
+            return true;
+        }
+        int left = treeDepth(root.left);
+        int right = treeDepth(root.right);
+
+        int dif = left - right;
+        if (dif != 0) {
+            return false;
+        }
+        return IsBalanced_Solution(root.left) && IsBalanced_Solution(root.right);
+    }
+
+    private int treeDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int left = treeDepth(root.left);
+        int right = treeDepth(root.right);
+        return left > right ? (left + 1) : (right + 1);
     }
 
     //数组中只出现一次的数字
@@ -1267,4 +1286,137 @@ public class Solution {
 
     }
 
+    //和为S的连续证书序列
+    public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+       // ArrayList<Integer> arrayList = new ArrayList<>();
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+
+        if (sum < 3) {
+            return null;
+        }
+        int pl = 0;
+        int pr = 1;
+
+        while (pl < pr) {
+            int num = (pr + pl) * (pr - pl + 1) / 2;
+            if (num == sum) {
+                ArrayList<Integer> arrayList = new ArrayList<>();
+                for (int i = pl; i <= pr; i++) {
+                    arrayList.add(i);
+                }
+                result.add(arrayList);
+                pr++;
+            } else if (num < sum) {
+                pr++;
+            }else {
+                pl++;
+            }
+        }
+        return result;
+    }
+
+    //和为S的两个数字
+    public ArrayList<Integer> FindNumbersWithSum(int [] array,int sum) {
+        ArrayList<Integer> result = new ArrayList<>();
+        int pl = 0;
+        int ph = array.length - 1;
+        while (pl < ph) {
+            int cur = array[pl] + array[ph];
+            if (cur == sum) {
+                result.add(array[pl]);
+                result.add(array[ph]);
+                return result;
+            } else if (cur < sum) {
+                pl++;
+            } else {
+                ph--;
+            }
+        }
+        return result;
+    }
+
+    //左旋转字符串
+    public String LeftRotateString(String str,int n) {
+        if (n > str.length()) {
+            return "";
+        }
+        String copy = str;
+        String l = copy.substring(0, n);
+        String r = str.substring(n);
+        return r+l;
+    }
+
+    //翻转单词顺序
+    public String ReverseSentence(String str) {
+        if(str == null || str == "" ||str == " "){
+            return "";
+        }
+        String[] strings = str.split(" ");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = strings.length - 1; i >= 0; i--) {
+            stringBuilder.append(strings[i]);
+            stringBuilder.append(" ");
+        }
+        stringBuilder.deleteCharAt(stringBuilder.lastIndexOf(" "));
+        return stringBuilder.toString();
+    }
+
+    //扑克牌顺子
+    public boolean isContinuous(int [] numbers) {
+        if (numbers == null || numbers.length == 0){
+            return false;
+        }
+        boolean result = false;
+        int num = numbers.length;
+
+        Arrays.sort(numbers);
+
+        int keys = 0;
+        for (int i = 0; i < num; i++) {
+            if (numbers[i] == 0) {
+                keys++;
+            }
+        }
+
+
+        for (int k = num - 2;k >= 0 && numbers[k] != 0; k--) {
+            int div = numbers[k + 1] - numbers[k];
+            if (div == 0) {
+                return false;
+            } else {
+                keys = keys - (div - 1);
+            }
+        }
+        if (keys >= 0) {
+            result = true;
+        }
+        return result;
+    }
+
+
+    //孩子们的游戏
+    public int LastRemaining_Solution(int n, int m) {
+        if (n <= 0 || m <= 0) {
+            return -1;
+        }
+        LinkedList<Integer> head = new LinkedList<>();
+
+        for (int i = 0; i < n; i++) {
+            head.add(i);
+        }
+
+        int bt = 0;
+        while (head.size() > 1) {
+            bt = (bt + m - 1) % head.size();
+            head.remove(bt);
+        }
+        return head.size() == 1 ? head.get(0) : -1;
+    }
+
+    //求1+2+3+。。。+n
+    public int Sum_Solution(int n) {
+        int sum = n;
+        boolean b = (n > 0) && ((sum += Sum_Solution(n - 1)) > 0);
+        return sum;
+    }
 }

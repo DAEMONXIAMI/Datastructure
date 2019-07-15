@@ -6,6 +6,9 @@ import main.MyThreadPool;
 import main.Solution;
 import org.junit.Test;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class TestClass {
     @Test
     public void test1(){
@@ -133,10 +136,16 @@ public class TestClass {
 
     @Test
     public void testNumberOf1Between1AndN_Solution (){
-        Solution ss = new Solution();
-        int[] array = {3};
-        int num = ss.GetNumberOfK(array, 3);
-        System.out.println(num);
+        /*Solution ss = new Solution();
+        int[] numbers = {};
+        boolean ans = ss.isContinuous(numbers);
+        System.out.println(ans);*/
+        LinkedList<Integer> head = new LinkedList<>();
+        //System.out.println(head);
+        Iterator iterator = head.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 
 }
